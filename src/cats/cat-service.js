@@ -20,4 +20,59 @@ catsData.enqueue(
   }
 );
 
+catsData.enqueue(
+  {
+    imageURL:
+      'https://placekitten.com/200/200?image=1',
+    imageDescription:
+      'A cute cuddly litten kitten who needs a home.',
+    name: 'Stripes',
+    sex: 'male',
+    age: 2,
+    breed: 'Tabby',
+    story: 'Mom cant take care of us all :('
+  }
+);
+
+catsData.enqueue(
+  {
+    imageURL:
+      'https://placekitten.com/200/200?image=11',
+    imageDescription:
+      'Orange bengal cat with black stripes lounging on concrete.',
+    name: 'Fluffy',
+    sex: 'Female',
+    age: 2,
+    breed: 'Bengal',
+    story: 'Thrown on the street'
+  }
+);
+
+catsData.enqueue(
+  {
+    imageURL:
+      'https://placekitten.com/200/200?image=3',
+    imageDescription:
+      'Orange bengal cat with black stripes lounging on concrete.',
+    name: 'Fluffy',
+    sex: 'Female',
+    age: 2,
+    breed: 'Bengal',
+    story: 'Thrown on the street'
+  }
+);
+
+catsData.enqueue(
+  {
+    imageURL:
+      'https://placekitten.com/200/200?image=7',
+    imageDescription:
+      'Orange bengal cat with black stripes lounging on concrete.',
+    name: 'Fluffy',
+    sex: 'Female',
+    age: 2,
+    breed: 'Bengal',
+    story: 'Thrown on the street'
+  }
+);
 module.exports = { catsData };
