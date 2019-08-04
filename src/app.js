@@ -16,7 +16,6 @@ app.use(helmet());
 app.use(morgan(morganOption));
 app.use(express.json());
 
-
 app.use('/api/cat', catRouter);
 app.use('/api/dog', dogRouter);
 
