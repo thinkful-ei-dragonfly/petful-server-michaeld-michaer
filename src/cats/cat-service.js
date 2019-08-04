@@ -1,7 +1,7 @@
 /* // --------------
-// Items to live here
-// catData for Queue */
-
+// Items live here to
+// populate Queue each
+// time server starts */
 const Queue = require('../queue');
 
 const catsData = new Queue();
@@ -28,7 +28,7 @@ catsData.enqueue(
       'A cute cuddly litten kitten who needs a home.',
     name: 'Stripes',
     sex: 'male',
-    age: 2,
+    age: 0,
     breed: 'Tabby',
     story: 'Mom cant take care of us all :('
   }
@@ -39,12 +39,12 @@ catsData.enqueue(
     imageURL:
       'https://placekitten.com/200/200?image=11',
     imageDescription:
-      'Orange bengal cat with black stripes lounging on concrete.',
-    name: 'Fluffy',
-    sex: 'Female',
+      'A very nice white cat who is shy but friendly',
+    name: 'Casper',
+    sex: 'male',
     age: 2,
-    breed: 'Bengal',
-    story: 'Thrown on the street'
+    breed: 'Turkish',
+    story: 'Homeless'
   }
 );
 
@@ -54,10 +54,10 @@ catsData.enqueue(
       'https://placekitten.com/200/200?image=3',
     imageDescription:
       'Orange bengal cat with black stripes lounging on concrete.',
-    name: 'Fluffy',
+    name: 'Lela',
     sex: 'Female',
     age: 2,
-    breed: 'Bengal',
+    breed: 'American Short-haired cat',
     story: 'Thrown on the street'
   }
 );
@@ -67,10 +67,10 @@ catsData.enqueue(
     imageURL:
       'https://placekitten.com/200/200?image=7',
     imageDescription:
-      'Orange bengal cat with black stripes lounging on concrete.',
-    name: 'Fluffy',
-    sex: 'Female',
-    age: 2,
+      'A miniature cat with a smiling face :)',
+    name: 'Butterbean',
+    sex: 'male',
+    age: 1,
     breed: 'Bengal',
     story: 'Thrown on the street'
   }

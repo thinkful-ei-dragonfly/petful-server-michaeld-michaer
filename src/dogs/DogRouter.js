@@ -1,22 +1,18 @@
 const express = require('express');
 const dogRouter = express.Router();
 
-const dogData = {
-  imageURL:
-    'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
-  imageDescription:
-    'A smiling golden-brown golden retriever listening to music.',
-  name: 'Zeus',
-  sex: 'Male',
-  age: 3,
-  breed: 'Golden Retriever',
-  story: 'Owner Passed away'
-};
+const { dogsData } = require('./dog-service');
 
 dogRouter
   .route('/')
   .get((req, res) => {
-    return res.json(dogData);
+    return res.json(dogsData);
   });
 
+dogRouter // DELETE from Queue, next in line now first
+  .route('/delete')
+  .delete((req, res) => {
+    dogsData.dequeue();
+    return res.json(dogsData);
+  });
 module.exports = dogRouter;
