@@ -1,9 +1,10 @@
-const app = require('../src/app')
+const app = require('../src/app');
+const catsData = require('../src/cats/cat-service');
 
 describe('App', () => {
-  it('GET / responds with 200 "Hello, world!"', () => {
+  it('GET /api/cat responds with {catsData}', () => {
     return supertest(app)
-      .get('/')
-      .expect(200, 'Hello, world!')
+      .get('/api/cat')
+      .expect(200);
   })
-})
+});
